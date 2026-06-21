@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Photo du cabinet à remplacer</title>
+  <desc id="desc">Placeholder pour une photo réelle du cabinet d'ophtalmologie à Saint-Raphaël.</desc>
+  <rect width="1200" height="900" fill="#f7fbfd"/>
+  <rect x="145" y="210" width="910" height="500" rx="18" fill="#ffffff" stroke="#dce7ec" stroke-width="10"/>
+  <rect x="210" y="285" width="300" height="250" rx="10" fill="#eaf6fb" stroke="#2b8fc7" stroke-width="8"/>
+  <rect x="585" y="285" width="380" height="70" rx="8" fill="#eaf6fb"/>
+  <rect x="585" y="405" width="260" height="42" rx="8" fill="#dce7ec"/>
+  <rect x="585" y="485" width="320" height="42" rx="8" fill="#dce7ec"/>
+  <path d="M285 610h630" stroke="#2b8fc7" stroke-width="14" stroke-linecap="round"/>
+  <text x="600" y="815" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#657580">Photo réelle du cabinet</text>
+</svg>
