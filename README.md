@@ -1,6 +1,6 @@
 # Site statique Dr MAB
 
-Site vitrine statique pour le Dr Musaab Abu Bakr, ophtalmologue à Saint-Raphaël.
+Site vitrine statique pour le Dr Musaab ABU-BAKR, ophtalmologue à Saint-Raphaël.
 
 ## Hébergement
 
@@ -11,7 +11,6 @@ Fichiers principaux :
 - `index.html`
 - `le-docteur.html`
 - `consultations.html`
-- `pathologies.html`
 - `informations-pratiques.html`
 - `contact.html`
 - `mentions-legales.html`
@@ -30,4 +29,4 @@ Fichiers principaux :
 
 ## SEO
 
-Chaque page contient un titre et une meta description. La page `pathologies.html` sert de base SEO médicale locale, avec contenu informatif prudent et orienté patient.
+Chaque page contient un titre et une meta description. Les contenus des pages `consultations.html` et `informations-pratiques.html` servent de base SEO locale avec des informations pratiques orientées patient.
