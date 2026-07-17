@@ -138,15 +138,19 @@
           <h2>International Patients Welcome</h2>
         </div>
         <div class="language-grid">
-          <article>
-            <h3>English</h3>
-            <p>Consultations available in English.</p>
+          <article data-language-card="fr" data-i18n-static lang="fr">
+            <h3>Pour les patients francophones</h3>
+            <p>Les consultations sont disponibles en français.</p>
           </article>
-          <article dir="rtl" lang="ar">
+          <article data-language-card="en" data-i18n-static lang="en">
+            <h3>For English-speaking patients</h3>
+            <p>Consultations are available in English.</p>
+          </article>
+          <article data-language-card="ar" data-i18n-static dir="rtl" lang="ar">
             <h3>قسم المرضى الناطقين بالعربية</h3>
             <p>الاستشارات متوفرة باللغة العربية.</p>
           </article>
-          <article lang="ro">
+          <article data-language-card="ro" data-i18n-static lang="ro">
             <h3>Pentru pacienții români</h3>
             <p>Consultațiile pot fi efectuate și în limba română.</p>
           </article>
@@ -183,6 +187,8 @@
         <a href="politique-confidentialite.html">Politique de confidentialité</a>
       </nav>
     </footer>
+    <script src="assets/i18n.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
+
