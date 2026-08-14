@@ -323,6 +323,10 @@ html[dir="rtl"] .check-list li::before {
   object-fit: cover;
 }
 
+.photo-card img.focus-right {
+  object-position: right center;
+}
+
 .photo-card img[hidden] {
   display: none;
 }
@@ -515,8 +519,23 @@ html[dir="rtl"] .check-list li::before {
   padding-top: 22px;
 }
 
-.service-list article,
 .pathology-list article {
+  padding: 28px;
+}
+
+.service-list article {
+  overflow: hidden;
+  padding: 0;
+}
+
+.service-list article img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.service-list .service-body {
   padding: 28px;
 }
 
@@ -550,6 +569,30 @@ html[dir="rtl"] .check-list li::before {
   display: grid;
   max-width: 920px;
   gap: 32px;
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+
+.timeline strong {
+  display: block;
+}
+
+.timeline .timeline-meta {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .content article {
@@ -717,6 +760,132 @@ html[dir="rtl"] .check-list li::before {
 @media (max-width: 420px) {
   .hero-title {
     font-size: 2.2rem;
+  }
+}
+
+.hero-carousel {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-carousel-slides {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-carousel-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 480ms ease;
+}
+
+.hero-carousel-slide.active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.hero-carousel-dots {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-carousel-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.hero-carousel-dot.active {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.hero-carousel-expand {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.hero-carousel-expand:hover {
+  background: var(--white);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(35, 49, 58, 0.85);
+}
+
+.lightbox.lightbox-open {
+  display: flex;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: var(--shadow);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel-slide {
+    transition: none;
   }
 }
 
