@@ -8,6 +8,18 @@ if (navToggle && siteNav) {
   });
 }
 
+document.querySelectorAll(".timeline-toggle").forEach((toggle) => {
+  const target = document.getElementById(toggle.dataset.toggleTarget);
+  if (!target) {
+    return;
+  }
+
+  toggle.addEventListener("click", () => {
+    const isExpanded = target.classList.toggle("is-expanded");
+    toggle.setAttribute("aria-expanded", String(isExpanded));
+  });
+});
+
 const heroCarousel = document.querySelector(".hero-carousel");
 
 if (heroCarousel) {
