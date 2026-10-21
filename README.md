@@ -1,6 +1,6 @@
 # Site statique Dr MAB
 
-Site vitrine statique pour le Dr Musaab ABU-BAKR, ophtalmologue à Saint-Raphaël.
+Site vitrine statique pour le Dr Musaab ABU-BAKR, chirurgien ophtalmologue à Saint-Raphaël.
 
 ## Hébergement
 
@@ -14,7 +14,6 @@ Fichiers principaux :
 - `informations-pratiques.html`
 - `contact.html`
 - `mentions-legales.html`
-- `politique-confidentialite.html`
 - `assets/styles.css`
 - `assets/script.js`
 
